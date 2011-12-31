@@ -1,5 +1,6 @@
 require 'pismo/internal_attributes'
 require 'pismo/external_attributes'
+require 'pismo/additional_attributes'
 
 module Pismo
   
