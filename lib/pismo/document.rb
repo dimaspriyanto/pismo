@@ -11,6 +11,7 @@ module Pismo
     
     include Pismo::InternalAttributes
     include Pismo::ExternalAttributes
+    include Pismo::AdditionalAttributes
     
     def initialize(handle, options = {})
       @options = options
