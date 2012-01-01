@@ -313,7 +313,7 @@ module Pismo
     end
 
     def links
-      @doc.css('a').map{|a| a.attributes('href').to_s }.uniq.reject{|h| h.empty? }
+      @doc.css('a').map{|a| a.attribute('href').to_s }.uniq
     end
   end
 end
