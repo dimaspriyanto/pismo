@@ -8,11 +8,11 @@ module Pismo
   class Document
     attr_reader :doc, :url, :options
     
-    ATTRIBUTE_METHODS = InternalAttributes.instance_methods + ExternalAttributes.instance_methods + AdditionalAttributes.instance_methods
+    ATTRIBUTE_METHODS = InternalAttributes.instance_methods + ExternalAttributes.instance_methods #+ AdditionalAttributes.instance_methods
     
     include Pismo::InternalAttributes
     include Pismo::ExternalAttributes
-    include Pismo::AdditionalAttributes
+    #include Pismo::AdditionalAttributes
     
     def initialize(handle, options = {})
       @options = options
