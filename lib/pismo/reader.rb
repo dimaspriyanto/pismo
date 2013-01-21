@@ -4,9 +4,6 @@ module Pismo
 
       def self.create(raw_content, options = {})
         type = options.delete(:reader)
-require 'pp'
-pp type
-pp '-----------------'
         case type
         when :score
           Pismo::Reader::Tree.new(raw_content, options)
