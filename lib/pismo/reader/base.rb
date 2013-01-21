@@ -29,7 +29,13 @@ module Pismo
       BAD_WORDS = ORIGINAL_BAD_WORDS + CUSTOM_BAD_WORDS
       
       # Words that kill a branch dead
-      FATAL_WORDS = %w{comments comment bookmarks social links ads related similar footer digg totop metadata sitesub nav sidebar commenting options addcomment leaderboard offscreen job prevlink prevnext navigation reply-link hide hidden sidebox archives vcard}
+      ORIGINAL_FATAL_WORDS = %w{comments comment bookmarks social links ads related similar footer digg totop metadata sitesub nav sidebar commenting options addcomment leaderboard offscreen job prevlink prevnext navigation reply-link hide hidden sidebox archives vcard}
+      
+      CUSTOM_FATAL_WORDS = [
+        'reportThis', 'box_featuredartikel', 'terekomendasi', 'pil_info', 'isi_info', 'mt15' #kompasiana
+      ]
+
+      FATAL_WORDS = ORIGINAL_FATAL_WORDS + CUSTOM_FATAL_WORDS
       
       META_WORDS = %w{january february march april may june july august september october november december jan feb mar apr may jun jul aug sep oct nov dec st th rd nd comments written posted on at published 2000 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 updated last gmt est pst pdt edt cet cdt cst article feature featured filed under comment comments follow twitter facebook email e-mail register story continue continues reading read inside more page next related response responses respond contact street phone tel email e-mail fax info tags tagged tag thanks credit creative commons copy nbsp lt gt this friend printable version subscribe rss mail follow twitter article via leave}.uniq
   
