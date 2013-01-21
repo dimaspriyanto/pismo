@@ -315,5 +315,8 @@ module Pismo
     def links
       @doc.css('a').map{|a| a.attribute('href').to_s }.uniq
     end
+
+    def related_links
+    end
   end
 end
